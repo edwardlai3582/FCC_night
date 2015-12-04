@@ -17,40 +17,24 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
 
+    <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+   
     <link href="stylesheets/main.css" rel="stylesheet" />
-    <link href="stylesheets/userpage.css" rel="stylesheet" />
-    <link href="stylesheets/polls.css" rel="stylesheet" />
-    <link href="stylesheets/chart.css" rel="stylesheet" />
+
   </head>
   
   <body ng-app="MyApp" >
     <div class="container">
-      <!-- Static navbar -->
-      <nav class="navbar navbar-default" ng-controller="navController">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" id="burger">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar top-bar"></span>
-              <span class="icon-bar middle-bar"></span>
-              <span class="icon-bar bottom-bar"></span>
-            </button>
+        <div class="jumbotron" id="intro_wrapper">
+            <div id="intro">
+                <h1>Plans tonight?</h1>
+                <p>See which bars are hoppin' tonight and RSVP ahead of time!
+Remember: take a cab and drink responsibly.</p>
+            </div>
+        </div>
 
-            <a class="navbar-brand" href="/#/firstpage" id="appName">Voting App</a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li ng-show="isLoggedIn()"><a href="/#/userpage" data-toggle="collapse" data-target="#navbar.in">{{ currentUser() }}</a></li>
-              <li ng-show="isLoggedIn()"><a href="" data-toggle="collapse" data-target="#navbar.in" ng-click="logOut()">Log Out</a></li>
-              <li ng-hide="isLoggedIn()"><a href="/#/signup" data-toggle="collapse" data-target="#navbar.in">SignUp</a></li>
-              <li ng-hide="isLoggedIn()"><a href="/#/login" data-toggle="collapse" data-target="#navbar.in">Login</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-
-      <!-- Main component for a primary marketing message or call to action -->
-      <div ui-view></div>
+        <!-- Main component for a primary marketing message or call to action -->
+        <div ui-view></div>
     </div> <!-- /container -->
      
     
@@ -58,19 +42,13 @@
     <script src="javascripts/angularApp.js"></script>
 
     <!-- Controllers-->
-    <script src="javascripts/controllers/navController.js"></script>
     <script src="javascripts/controllers/firstpageController.js"></script>
-    <script src="javascripts/controllers/loginController.js"></script>
-    <script src="javascripts/controllers/signupController.js"></script>
-    <script src="javascripts/controllers/userpageController.js"></script>
-    <script src="javascripts/controllers/pollsController.js"></script>
     
     <!-- Directives -->
-    <script src="javascripts/directives/chartDirective.js"></script>
     
     <!-- Factories/Services -->
     <script src="javascripts/factories/authFactory.js"></script>
-    <script src="javascripts/factories/pollFactory.js"></script>
+    <script src="javascripts/factories/barFactory.js"></script>
     
   </body>
 </html>  

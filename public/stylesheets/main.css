@@ -12,97 +12,54 @@ html,body {
     margin-right: 0;
 }
 
-.navbar{
-    border-radius: 0;
-    border-width: 0;
+#intro_wrapper{
     margin: 0;
-    background-image: none;
-    background-repeat: no-repeat;
-    background-color:black;
-    z-index: 2;
-    position: fixed;
-    width:100%;
 }
 
-#navbar a{
-    color: white; 
-    text-shadow:none;
-}
-
-#navbar a:hover {
-    color:darkturquoise;
-}
-
-#appName{
-    color: darkturquoise;
-    text-shadow:none;
-    font-size: 30px;
-}
-
-#burger{
-    background-color:transparent;
-    border:none;
-}
-
-#burger .icon-bar{
-    background-color:white;
-}
-
-.icon-bar {
-    width: 22px;
-    transition: all 0.2s;
-}
-
-.navbar-toggle .top-bar {
-    transform: rotate(45deg);
-    transform-origin: 10% 10%;
-}
-.navbar-toggle .middle-bar {
-    opacity: 0;
-}
-.navbar-toggle .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
-}
-
-.navbar-toggle.collapsed .top-bar {
-    transform: rotate(0);
-}
-.navbar-toggle.collapsed .middle-bar {
-    opacity: 1;
-}
-.navbar-toggle.collapsed .bottom-bar {
-    transform: rotate(0);
-}
-
-#letsvote {
-    padding-top: 250px;
+#intro{
+    font-family: 'Abril Fatface', cursive;
     padding-left: 5%;
     padding-right: 5%;
-    text-align: center;
-    font-size: 50px;
-    height:100%;
-    border-radius: 0px;
-    margin:0;
-    background-color:floralwhite;
+    border-radius: 0;
 }
 
-#signUp, #login{
-    padding-top: 250px;
+#intro h1{
+    font-size: 40px;
+}
+
+#getWasted{
     padding-left: 5%;
     padding-right: 5%;
-    font-size: 30px;
-    line-height: 30px;
-    background-color:floralwhite;
+    border-radius: 0;
+    margin: 0;
 }
 
-#signUp input, #login input{
-    font-size: 30px;
-    line-height: 40px;
-    height: 40px;
+#searchB{
+    font-weight: bolder;
+    background:none;
 }
 
-#toSignup{
-    font-size:20px;
-    margin-left: 10px;
+#barList{
+    position: relative;
+    width: 95%;
+    left: 5%;
+    margin-top: 35px;
+}
+
+.yelp_wrapper{
+    padding: 10px;
+}
+
+.yelp{
+    background-color: white;
+    padding: 10px;
+}
+
+.barName{
+    font-family: 'Abril Fatface', cursive;
+    color: darkslategray;
+}
+
+.barDes{
+    margin-top: 10px;
 }
